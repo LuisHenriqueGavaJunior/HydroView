@@ -3,6 +3,7 @@ Semana 1: Desenvolvimento do Sistema de Coleta de Dados
 -Programação do Arduino para ler dados do sensor ultrassônico.
 
 -Implementação inicial de comunicação entre Arduino e Node-RED.
+
 -------------------------------------------------------------------
 Semana 2: Armazenamento e Processamento de Dados
 
@@ -11,6 +12,7 @@ Semana 2: Armazenamento e Processamento de Dados
 -Integração do Node-RED com o InfluxDB para gravar dados de nível da água.
 
 -Testes de armazenamento e verificação da integridade dos dados.
+
 -------------------------------------------------------------------
 Semana 3: Desenvolvimento do Dashboard e Visualização
 
@@ -19,6 +21,7 @@ Semana 3: Desenvolvimento do Dashboard e Visualização
 -Desenvolvimento do dashboard com gráficos e indicadores para monitoramento dos níveis de água.
 
 -Testes de exibição dos dados no Grafana e ajustes de design.
+
 -------------------------------------------------------------------
 Semana 5: Acesso Remoto e Integração com Ngrok
 
@@ -27,11 +30,10 @@ Semana 5: Acesso Remoto e Integração com Ngrok
 -Testes de conexão remota e ajustes de configuração do Ngrok.
 
 -Validação do acesso remoto em diferentes dispositivos e redes.
+
 -------------------------------------------------------------------
 Semana 6: Integração e Testes Finais
 
-Dia 1-3: Integração dos componentes (Arduino, Node-RED, InfluxDB, Grafana e Ngrok).
+-Integração dos componentes (Arduino, Node-RED, InfluxDB, Grafana e Ngrok).
 
-Dia 4-5: Testes de funcionalidade geral e verificação do desempenho do sistema.
-
-Dia 6-7: Ajustes finais para garantir estabilidade e confiabilidade do sistema.
+-Testes de funcionalidade geral e verificação do desempenho do sistema.
