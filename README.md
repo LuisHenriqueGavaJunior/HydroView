@@ -1,9 +1,11 @@
 Escopo do Projeto HydroView
 
 Objetivo do Projeto:
+
   -Desenvolver um sistema de monitoramento inteligente para reservatórios de água, permitindo acompanhamento remoto e em tempo real dos níveis de água através de uma dashboard dinâmica.
 
 Funcionalidades Principais:
+
   -Medir o nível da água no reservatório utilizando sensor ultrassônico.
   -Armazenar os dados coletados em um banco de dados InfluxDB.
   -Exibir os dados em gráficos, indicadores e alertas visuais através do Grafana.
@@ -11,6 +13,7 @@ Funcionalidades Principais:
   -Garantir comunicação entre os componentes via IoT, utilizando Node-RED para processamento dos dados.
 
 Tecnologias Utilizadas:
+
   -Arduino para processamento dos dados dos sensores.
   -Sensor ultrassônico para medição do nível da água.
   -InfluxDB: armazenamento dos dados coletados.
@@ -19,6 +22,7 @@ Tecnologias Utilizadas:
   -Ngrok: comunicação entre os computadores.
   
 Arquitetura do Sistema:
+
 1 - Sensores ultrassônicos conectados ao Arduino medem o nível da água periodicamente.
 2 - Os dados são enviados para o servidor onde o Node-RED processa e estrutura as informações.
 3 - O InfluxDB registra os dados coletados.
