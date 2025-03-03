@@ -5,6 +5,7 @@ Objetivo do Projeto: Desenvolver um sistema de monitoramento inteligente para re
 --------------------------------------------------------------------------------------------------
 
 Funcionalidades Principais:
+
   -Medir o nível da água no reservatório utilizando sensor ultrassônico.
   
   -Armazenar os dados coletados em um banco de dados InfluxDB.
