@@ -2,6 +2,8 @@ Escopo do Projeto HydroView
 
 Objetivo do Projeto: Desenvolver um sistema de monitoramento inteligente para reservatórios de água, permitindo acompanhamento remoto e em tempo real dos níveis de água através de uma dashboard dinâmica.
 
+
+
 Funcionalidades Principais:
   -Medir o nível da água no reservatório utilizando sensor ultrassônico.
   
@@ -12,6 +14,8 @@ Funcionalidades Principais:
   -Permitir acesso remoto às informações coletadas através da integração com Ngrok.
   
   -Garantir comunicação entre os componentes via IoT, utilizando Node-RED para processamento dos dados.
+
+
 
 Tecnologias Utilizadas:
 
@@ -26,6 +30,8 @@ Tecnologias Utilizadas:
   -Grafana: visualização dos dados coletados por meio de gráficos e dashboards.
   
   -Ngrok: comunicação entre os computadores.
+
+
   
 Arquitetura do Sistema:
 
@@ -39,7 +45,10 @@ Arquitetura do Sistema:
 
 5 - O Ngrok possibilita que os usuários acessem a dashboard de qualquer local com internet.
 
+
+
 Critérios de Aceitação: 
+
   -O sistema deve ser capaz de medir corretamente o nível da água e registrar os dados no InfluxDB.
   
   -A dashboard do Grafana deve exibir os dados de forma clara e atualizada em tempo real.
