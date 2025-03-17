@@ -36,15 +36,15 @@ Tecnologias Utilizadas:
   
 Arquitetura do Sistema:
 
-1 - Sensores ultrassônicos conectados ao Arduino medem o nível da água periodicamente.
+  - Sensores ultrassônicos conectados ao Arduino medem o nível da água periodicamente.
 
-2 - Os dados são enviados para o servidor onde o Node-RED processa e estrutura as informações.
+  - Os dados são enviados para o servidor onde o Node-RED processa e estrutura as informações.
 
-3 - O InfluxDB registra os dados coletados.
+  - O InfluxDB registra os dados coletados.
 
-4 - O Grafana exibe os dados em tempo real e de forma intuitiva.
+  - O Grafana exibe os dados em tempo real e de forma intuitiva.
 
-5 - O Ngrok possibilita que os usuários acessem a dashboard de qualquer local com internet.
+  - O Ngrok possibilita que os usuários acessem a dashboard de qualquer local com internet.
 
 --------------------------------------------------------------------------------------------------
 
