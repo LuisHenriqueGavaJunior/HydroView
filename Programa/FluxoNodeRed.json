@@ -1,0 +1,72 @@
+[
+    {
+        "id": "ffb19ac7c0021a1c",
+        "type": "influxdb batch",
+        "z": "bdaccfa21d88593e",
+        "influxdb": "4ebf1d437f8389a4",
+        "precision": "",
+        "retentionPolicy": "",
+        "name": "",
+        "database": "hydroview",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "organisation",
+        "bucket": "bucket",
+        "x": 730,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "a9924cf9678dc384",
+        "type": "function",
+        "z": "bdaccfa21d88593e",
+        "name": "Query Influx",
+        "func": "let payload = msg.payload.map(function (row) {\n    return {\n        measurement: \"Reservatório\",\n        tags: {},\n        fields: {\n            nivelAgua: row[0] || 0,\n        },\n        timestamp: row.timestamp ? row.timestamp : Date.now() // Usa o timestamp gerado na função anterior\n    };\n});\n\nmsg.payload = payload;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 470,
+        "y": 200,
+        "wires": [
+            [
+                "ffb19ac7c0021a1c",
+                "90a26d89e2e2076c"
+            ]
+        ]
+    },
+    {
+        "id": "90a26d89e2e2076c",
+        "type": "debug",
+        "z": "bdaccfa21d88593e",
+        "name": "Debug Influx",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 710,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "4ebf1d437f8389a4",
+        "type": "influxdb",
+        "hostname": "127.0.0.1",
+        "port": "8086",
+        "protocol": "http",
+        "database": "database",
+        "name": "copasil",
+        "usetls": false,
+        "tls": "",
+        "influxdbVersion": "1.8-flux",
+        "url": "http://localhost:8086",
+        "timeout": "10",
+        "rejectUnauthorized": true
+    }
+]
